@@ -1,7 +1,7 @@
 from leapp.libraries.actor import library
 
 
-class logger_mocked(object):
+class logger_mocked(object):/
     def __init__(self):
         self.infomsg = None
 
@@ -46,4 +46,3 @@ def test_nm_with_error(monkeypatch):
     assert parser is not None
     assert parser.has_section('main') is False
     assert parser.has_option('main', 'dhcp') is False
-
